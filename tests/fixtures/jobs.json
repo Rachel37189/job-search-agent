@@ -1,0 +1,7 @@
+{"jobs": [
+  {"id": 101, "title": "Junior Python Developer", "company_name": "Acme", "candidate_required_location": "Worldwide", "salary": ""},
+  {"id": 102, "title": "Senior Backend Engineer", "company_name": "Globex", "candidate_required_location": "Europe", "salary": "$120k"},
+  {"id": 103, "title": "QA Automation Engineer", "company_name": "Initech", "candidate_required_location": "Worldwide", "salary": ""},
+  {"id": 104, "title": "React Frontend Developer", "company_name": "Umbrella", "candidate_required_location": "EMEA", "salary": "$70k"},
+  {"id": 105, "title": "Data Analyst (Entry Level)", "company_name": "Hooli", "candidate_required_location": "Worldwide", "salary": ""}
+]}

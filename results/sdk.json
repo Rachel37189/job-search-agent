@@ -1,0 +1,313 @@
+{
+  "version": "sdk",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "turns": [
+    {
+      "session": 1,
+      "turn": 1,
+      "user": "אני מחפשת עבודה ראשונה בהייטק. תשמור את ההעדפות שלי: Backend, Full-stack, Frontend או Data/AI, רק משרות ג'וניור, עבודה מרחוק, ובלי משרות QA.",
+      "reply": "ההעדפות שלך נשמרו:\n- **תחומים:** Backend, Full-stack, Frontend, Data, AI\n- **רמה:** ג'וניור בלבד\n- **אופן עבודה:** מרחוק\n- **בלי:** QA\n\nלחפש לך משרות מתאימות? אפשר לתת מילת מפתח, למשל python או react.",
+      "tools": [
+        "save_preference"
+      ],
+      "model_calls": 2,
+      "seconds": 5.55,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 4,
+        "cache_read": 5324,
+        "cache_write": 257,
+        "output": 292
+      },
+      "input": 1258,
+      "cache_read": 5324,
+      "cache_write": 257,
+      "output": 577,
+      "cost_usd": 0.009245,
+      "aux_models": {
+        "claude-haiku-5-5": {
+          "input": 1254,
+          "cache_read": 0,
+          "cache_write": 0,
+          "output": 285,
+          "cost_usd": 0.000268
+        }
+      }
+    },
+    {
+      "session": 1,
+      "turn": 2,
+      "user": "תחפש לי משרות Python מתאימות.",
+      "reply": "לא מצאתי כרגע משרות Python מתאימות. החיפוש החזיר 10 משרות, אבל אף אחת מהן לא ברמת ג'וניור. ניסיתי גם לחפש \"junior\" ולא היו תוצאות.\n\nאפשר לנסות:\n1. **מילות מפתח אחרות**, למשל react, data, javascript או backend.\n2. **להוסיף גם משרות mid**, כי חלק מהן פתוחות גם למועמדים בלי ניסיון. זה ישנה את ההעדפות השמורות שלך, אז אעשה את זה רק אם תאשרי.\n\nמה מתאים לך?",
+      "tools": [
+        "search_jobs",
+        "search_jobs"
+      ],
+      "model_calls": 3,
+      "seconds": 9.31,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 6,
+        "cache_read": 9231,
+        "cache_write": 472,
+        "output": 455
+      },
+      "input": 6,
+      "cache_read": 9231,
+      "cache_write": 472,
+      "output": 455,
+      "cost_usd": 0.014746,
+      "aux_models": {}
+    },
+    {
+      "session": 1,
+      "turn": 3,
+      "user": "הגשתי מועמדות ל-Wix לתפקיד Junior Backend Developer, ול-Monday לתפקיד Junior Data Analyst.",
+      "reply": "שמרתי את שתי המועמדויות בסטטוס \"הוגש\":\n- **Wix**, Junior Backend Developer\n- **Monday**, Junior Data Analyst\n\nבהצלחה! לקבוע לך תזכורת לבדוק מה קורה איתן, למשל בעוד שבוע?",
+      "tools": [
+        "save_application",
+        "save_application"
+      ],
+      "model_calls": 3,
+      "seconds": 5.53,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 4,
+        "cache_read": 7118,
+        "cache_write": 681,
+        "output": 322
+      },
+      "input": 4,
+      "cache_read": 7118,
+      "cache_write": 681,
+      "output": 322,
+      "cost_usd": 0.013328,
+      "aux_models": {}
+    },
+    {
+      "session": 1,
+      "turn": 4,
+      "user": "תזכיר לי לעקוב מול Wix בעוד שבוע.",
+      "reply": "הוספתי תזכורת לעקוב מול **Wix** ב-1.11.2026, בעוד שבוע.",
+      "tools": [
+        "follow_up"
+      ],
+      "model_calls": 2,
+      "seconds": 4.79,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 4,
+        "cache_read": 8306,
+        "cache_write": 344,
+        "output": 180
+      },
+      "input": 4,
+      "cache_read": 8306,
+      "cache_write": 344,
+      "output": 180,
+      "cost_usd": 0.008029,
+      "aux_models": {}
+    },
+    {
+      "session": 2,
+      "turn": 5,
+      "user": "מה ההעדפות שלי ולאן כבר הגשתי?",
+      "reply": "**ההעדפות שלך:**\n- **תחומים:** Backend, Full-stack, Frontend, Data, AI\n- **רמה:** ג'וניור בלבד\n- **אופן עבודה:** מרחוק\n- **בלי:** QA\n\n**הגשת ל:**\n- **Wix**, Junior Backend Developer, בסטטוס \"הוגש\" (יש תזכורת לעקוב ב-1.11.2026)\n- **Monday**, Junior Data Analyst, בסטטוס \"הוגש\"",
+      "tools": [],
+      "model_calls": 1,
+      "seconds": 3.43,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 2,
+        "cache_read": 4416,
+        "cache_write": 388,
+        "output": 215
+      },
+      "input": 2,
+      "cache_read": 4416,
+      "cache_write": 388,
+      "output": 215,
+      "cost_usd": 0.008295,
+      "aux_models": {}
+    },
+    {
+      "session": 2,
+      "turn": 6,
+      "user": "קיבלתי זימון לראיון ב-Wix, תעדכן.",
+      "reply": "מזל טוב! 🎉 עדכנתי: **Wix**, Junior Backend Developer, עכשיו בסטטוס \"ראיון\".\n\nעדיין יש לך תזכורת לעקוב מול Wix ב-1.11.2026. לסגור אותה, כי כבר קיבלת תשובה?",
+      "tools": [
+        "save_application"
+      ],
+      "model_calls": 2,
+      "seconds": 5.35,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 4,
+        "cache_read": 9876,
+        "cache_write": 424,
+        "output": 240
+      },
+      "input": 4,
+      "cache_read": 9876,
+      "cache_write": 424,
+      "output": 240,
+      "cost_usd": 0.010183,
+      "aux_models": {}
+    },
+    {
+      "session": 2,
+      "turn": 7,
+      "user": "שיניתי את דעתי: אני מוכנה גם למשרות mid-level, לא רק ג'וניור. תחפש לי משרות React.",
+      "reply": "עדכנתי את ההעדפות: מעכשיו אחפש משרות ג'וניור וגם mid.\n\nחיפשתי React ומצאתי 7 משרות שעוברות את הסינון, אבל רובן לא קשורות לפיתוח. רלוונטיות במידה מסוימת:\n- **Software Engineer, AI Coding Tasks** ב-**Askable**: מכל העולם, $1000 למשימה. זו המשרה היחידה שבאמת דורשת קוד, אבל היא לפי משימות ולא משרה קבועה.\n- **AI Trainer - Video Annotation** ב-**iMerit Technology**: מכל העולם, 70K-80K. זו עבודת תיוג בתחום AI, לא פיתוח.\n\nהשאר הן משרות כמו מכירות, כתיבה, עוזרת משרדית ו-Service Desk, שלא מתאימות לך.\n\nלנסות מילות מפתח אחרות, כמו frontend, javascript או typescript?",
+      "tools": [
+        "save_preference",
+        "search_jobs"
+      ],
+      "model_calls": 3,
+      "seconds": 11.03,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 6,
+        "cache_read": 16267,
+        "cache_write": 782,
+        "output": 609
+      },
+      "input": 6,
+      "cache_read": 16267,
+      "cache_write": 782,
+      "output": 609,
+      "cost_usd": 0.021713,
+      "aux_models": {}
+    },
+    {
+      "session": 2,
+      "turn": 8,
+      "user": "מה התזכורות שלי?",
+      "reply": "יש לך תזכורת פתוחה אחת:\n- **1.11.2026**: לעקוב מול **Wix** על המועמדות ל-Junior Backend Developer\n\nכבר קיבלת זימון לראיון ב-Wix, אז אולי התזכורת כבר לא נחוצה. לסגור אותה, או לשנות אותה לתזכורת על הראיון?",
+      "tools": [
+        "follow_up"
+      ],
+      "model_calls": 2,
+      "seconds": 4.86,
+      "compacted": false,
+      "model": "claude-opus-5-5",
+      "main_loop_usage": {
+        "input": 4,
+        "cache_read": 12480,
+        "cache_write": 572,
+        "output": 204
+      },
+      "input": 4,
+      "cache_read": 12480,
+      "cache_write": 572,
+      "output": 204,
+      "cost_usd": 0.011168,
+      "aux_models": {}
+    }
+  ],
+  "totals": {
+    "input": 1288,
+    "cache_read": 73018,
+    "cache_write": 3920,
+    "output": 2802,
+    "model_calls": 18,
+    "cost_usd": 0.096707,
+    "seconds": 49.85,
+    "cache_hit_pct": 93.3
+  },
+  "checks": [
+    {
+      "id": "contradiction_replaced",
+      "description": "Experience levels were replaced by junior+mid (not junior only, not duplicated)",
+      "passed": true,
+      "observed": [
+        "junior",
+        "mid"
+      ]
+    },
+    {
+      "id": "qa_excluded",
+      "description": "QA is saved as an excluded role",
+      "passed": true,
+      "observed": [
+        "qa"
+      ]
+    },
+    {
+      "id": "wix_interview_single",
+      "description": "Wix has exactly one application and its status is interview",
+      "passed": true,
+      "observed": [
+        {
+          "company": "Wix",
+          "role": "Junior Backend Developer",
+          "status": "interview",
+          "updated": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "id": "monday_applied",
+      "description": "Monday has one application with status applied",
+      "passed": true,
+      "observed": [
+        {
+          "company": "Monday",
+          "role": "Junior Data Analyst",
+          "status": "applied",
+          "updated": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "id": "wix_followup_open",
+      "description": "An open follow-up reminder exists for Wix",
+      "passed": true,
+      "observed": [
+        {
+          "company": "Wix",
+          "done": false,
+          "due": "2026-11-01",
+          "note": "Follow up on Junior Backend Developer application"
+        }
+      ]
+    },
+    {
+      "id": "external_tool_both_sessions",
+      "description": "search_jobs (external API) ran in session 1 and in session 2",
+      "passed": true,
+      "observed": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "memory_recalled_in_session2",
+      "description": "Turn 5 (first turn of session 2) mentions both Wix and Monday",
+      "passed": true,
+      "observed": {
+        "wix": true,
+        "monday": true
+      }
+    }
+  ],
+  "checks_passed": "7/7",
+  "loc": {
+    "loop": 3,
+    "tools": 8,
+    "history": 2,
+    "memory": 5,
+    "context": 1,
+    "compaction": 1,
+    "caching": 0,
+    "tokens": 8
+  }
+}

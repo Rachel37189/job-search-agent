@@ -1,0 +1,63 @@
+{
+  "name": "job-search-two-sessions",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "sessions": [
+    {
+      "session": 1,
+      "turns": [
+        "אני מחפשת עבודה ראשונה בהייטק. תשמור את ההעדפות שלי: Backend, Full-stack, Frontend או Data/AI, רק משרות ג'וניור, עבודה מרחוק, ובלי משרות QA.",
+        "תחפש לי משרות Python מתאימות.",
+        "הגשתי מועמדות ל-Wix לתפקיד Junior Backend Developer, ול-Monday לתפקיד Junior Data Analyst.",
+        "תזכיר לי לעקוב מול Wix בעוד שבוע."
+      ]
+    },
+    {
+      "session": 2,
+      "turns": [
+        "מה ההעדפות שלי ולאן כבר הגשתי?",
+        "קיבלתי זימון לראיון ב-Wix, תעדכן.",
+        "שיניתי את דעתי: אני מוכנה גם למשרות mid-level, לא רק ג'וניור. תחפש לי משרות React.",
+        "מה התזכורות שלי?"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "contradiction_replaced",
+      "description": "Experience levels were replaced by junior+mid (not junior only, not duplicated)",
+      "type": "state_set_equals", "path": "preferences.experience_levels", "value": ["junior", "mid"]
+    },
+    {
+      "id": "qa_excluded",
+      "description": "QA is saved as an excluded role",
+      "type": "state_contains", "path": "preferences.excluded_roles", "value": "qa"
+    },
+    {
+      "id": "wix_interview_single",
+      "description": "Wix has exactly one application and its status is interview",
+      "type": "application", "company": "Wix", "status": "interview", "count": 1
+    },
+    {
+      "id": "monday_applied",
+      "description": "Monday has one application with status applied",
+      "type": "application", "company": "Monday", "status": "applied", "count": 1
+    },
+    {
+      "id": "wix_followup_open",
+      "description": "An open follow-up reminder exists for Wix",
+      "type": "open_followup", "company": "Wix"
+    },
+    {
+      "id": "external_tool_both_sessions",
+      "description": "search_jobs (external API) ran in session 1 and in session 2",
+      "type": "tool_used_in_sessions", "tool": "search_jobs", "sessions": [1, 2]
+    },
+    {
+      "id": "memory_recalled_in_session2",
+      "description": "Turn 5 (first turn of session 2) mentions both Wix and Monday",
+      "type": "reply_mentions", "turn": 5,
+      "any_of": {"wix": ["wix", "וויקס", "ויקס"], "monday": ["monday", "מאנדיי", "מנדיי"]}
+    }
+  ]
+}
